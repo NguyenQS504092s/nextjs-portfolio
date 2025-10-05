@@ -565,3 +565,55 @@ footer {
     justify-content: space-between;
     color: rgba(255, 255, 255, 0.6);
 }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .profile-container, .testimonials-container, .contact-container, .footer-container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-header {
+        width: 90%;
+    }
+    .profile-container, .testimonials-container, .contact-container {
+        flex-direction: column;
+    }
+    .testimonials-left, .testimonials-right, .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-card:nth-child(1), .project-card:nth-child(4) {
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        padding: 0 20px;
+    }
+    .nav-links {
+        display: none; /* Simple hide for mobile, can be replaced with hamburger menu */
+    }
+    #hero h1 {
+        font-size: 48px;
+    }
+    .profile-card {
+        width: 100%;
+    }
+    .stats {
+        grid-template-columns: 1fr;
+    }
+    .footer-top {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
