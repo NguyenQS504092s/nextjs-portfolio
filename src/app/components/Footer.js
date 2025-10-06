@@ -1,30 +1,24 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="footer-container">
-        <div className="footer-top">
-          <div className="footer-left">
-            <Link href="/" className="logo">Snapshot</Link>
-            <ul className="nav-links">
-              <li><Link href="#services">Services</Link></li>
-              <li><Link href="#projects">Projects</Link></li>
-              <li><Link href="#profile">Profile</Link></li>
-              <li><Link href="#testimonials">Reviews</Link></li>
-              <li><Link href="#contact">Contact</Link></li>
-            </ul>
-          </div>
-          <div className="footer-right social-media">
-            <Link href="#"><Image src="/social-icon-1.svg" alt="Social Media 1" width={24} height={24} /></Link>
-            <Link href="#"><Image src="/social-icon-2.svg" alt="Social Media 2" width={24} height={24} /></Link>
-            <Link href="#"><Image src="/social-icon-3.svg" alt="Social Media 3" width={24} height={24} /></Link>
-          </div>
+    <footer id="contact">
+      <div className="footer-container new-section">
+        <div className="section-header">
+          <div className="title-badge">📬 Contact Me</div>
+          <h2>Get In Touch</h2>
+        </div>
+        <div className="contact-links">
+          <p>Feel free to reach out through any of the platforms below:</p>
+          <ul>
+            <li><strong>Email:</strong> 1Pixel3Neurons@gmail.com</li>
+            <li><strong>LinkedIn:</strong> <Link href="https://linkedin.com/in/1Pixel3Neurons" target="_blank">linkedin.com/in/1Pixel3Neurons</Link></li>
+            <li><strong>GitHub:</strong> <Link href="https://github.com/1Pixel3Neurons" target="_blank">github.com/1Pixel3Neurons</Link></li>
+            <li><strong>Twitter:</strong> <Link href="https://x.com/1Pixel3Neurons" target="_blank">@1Pixel3Neurons</Link></li>
+          </ul>
         </div>
         <div className="footer-bottom">
-          <p>© 2025 Snapshot</p>
-          <p>Made by Snapshot</p>
+          <p>Made with ❤️ by Aftab Alam & Cline</p>
         </div>
       </div>
     </footer>
